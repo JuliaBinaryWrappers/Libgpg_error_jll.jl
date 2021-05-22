@@ -2,12 +2,12 @@
 export libgpg_error
 
 JLLWrappers.@generate_wrapper_header("Libgpg_error")
-JLLWrappers.@declare_library_product(libgpg_error, "libgpg-error6-0.dll")
+JLLWrappers.@declare_library_product(libgpg_error, "libgpg-error-0.dll")
 function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         libgpg_error,
-        "bin\\libgpg-error6-0.dll",
+        "bin\\libgpg-error-0.dll",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
